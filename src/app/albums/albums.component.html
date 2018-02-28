@@ -1,0 +1,8 @@
+<div>
+  <div *ngFor="let album of recentAlbums" class="album">
+    <div *ngFor="let photo of getLastPhotos(album, 2)" class="photo">
+      <img src="{{photo.thumbnailUrl}}">
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>

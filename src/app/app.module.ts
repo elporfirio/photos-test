@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { AlbumsComponent } from './albums/albums.component';
+import {PhotosService} from './services/photos.service';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlbumsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [PhotosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

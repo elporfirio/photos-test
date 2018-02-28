@@ -1,0 +1,20 @@
+.album {
+  width: 450px;
+  min-height: 150px;
+  background-color: #81ecec;
+  border: 1px dashed #00b894;
+  margin: 20px;
+}
+
+.photo {
+  float: left;
+  min-width: 150px;
+  min-height: 150px;
+  padding: 10px;
+  background-color: #dfe6e9;
+  border: 1px solid gray;
+}
+
+.clear {
+  clear: both;
+}
